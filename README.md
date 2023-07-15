@@ -1,19 +1,32 @@
-### Hexlet tests and linter status:
+# nodejs-package
 [![Actions Status](https://github.com/ArthurFloyd/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/ArthurFloyd/frontend-project-44/actions)
 
-### Maintainability Badge:
+### Setup
+>make install
+>npm link
 
-### Asciinema link brain-even:
+### Play Brain-games
+>brain-even
+Answer "yes" if the number is even, otherwise answer "no"
+**Asciinema link brain-even:**
 (https://asciinema.org/a/595755)
 
-### Asciinema link brain-calc:
+>brain-calc
+What is the result of the expression?
+**Asciinema link brain-calc:**
 (https://asciinema.org/a/595815)
 
-### Asciinema link brain-gcd:
+>brain-gcd
+Find the greatest common divisor of given numbers
+**Asciinema link brain-gcd:**
 (https://asciinema.org/a/595907)
 
-### Asciinema link brain-progression:
+>brain-progression
+What number is missing in the progression?
+**Asciinema link brain-progression:**
 (https://asciinema.org/a/596895)
 
-### Asciinema link brain-prime:
+>brain-prime
+Answer "yes" if given number is prime. Otherwise answer "no"
+**Asciinema link brain-prime:**
 (https://asciinema.org/a/596336)
