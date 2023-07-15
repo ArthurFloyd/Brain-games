@@ -12,8 +12,8 @@
 ### Asciinema link brain-gcd:
 (https://asciinema.org/a/595907)
 
-### Asciinema link brain-prog:
-(https://asciinema.org/a/596202)
+### Asciinema link brain-progression:
+(https://asciinema.org/a/596895)
 
 ### Asciinema link brain-prime:
 (https://asciinema.org/a/596336)
