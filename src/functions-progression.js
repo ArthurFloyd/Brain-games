@@ -1,4 +1,6 @@
 import readlineSync from 'readline-sync';
+// eslint-disable-next-line import/no-extraneous-dependencies, no-unused-vars
+import _ from 'lodash';
 import { getRandomNumber } from './functions.js';
 
 export default () => {
@@ -27,9 +29,9 @@ export default () => {
       // eslint-disable-next-line prefer-const
       correctAnswer = arrayProgressions[hiddenNumberIndex];
       arrayProgressions[hiddenNumberIndex] = '..';
-      console.log(`Question: ${arrayProgressions}`);
+      console.log(`Question: ${arrayProgressions.join(' ')}`);
       const playerAnswer = readlineSync.question('Your answer: ');
-      if (correctAnswer === Number(playerAnswer)) {
+      if (correctAnswer === Number(arrayProgressions)) {
         console.log('Correct!');
         movesCount += 1;
       } else {
