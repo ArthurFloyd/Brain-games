@@ -31,7 +31,7 @@ export default () => {
       arrayProgressions[hiddenNumberIndex] = '..';
       console.log(`Question: ${arrayProgressions.join(' ')}`);
       const playerAnswer = readlineSync.question('Your answer: ');
-      if (correctAnswer === Number(arrayProgressions)) {
+      if (correctAnswer === Number(playerAnswer)) {
         console.log('Correct!');
         movesCount += 1;
       } else {
