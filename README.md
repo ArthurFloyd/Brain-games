@@ -16,11 +16,9 @@ npm link
 brain-even
 ```
 **rules game:**
+*Answer "yes" if the number is even, otherwise answer "no".*
 
->Answer "yes" if the number is even, otherwise answer "no"
-
-**Asciinema link brain-even:**
-
+Asciinema link brain-even:
 (https://asciinema.org/a/595755)
 
 ### Brain-calc
@@ -29,11 +27,9 @@ brain-even
 brain-calc
 ```
 **rules game:**
+*What is the result of the expression?*
 
->What is the result of the expression?
-
-**Asciinema link brain-calc:**
-
+Asciinema link brain-calc:
 (https://asciinema.org/a/595815)
 
 ### Brain-gcd
@@ -42,11 +38,9 @@ brain-calc
 brain-gcd
 ```
 **rules game:**
+*Find the greatest common divisor of given numbers.*
 
->Find the greatest common divisor of given numbers
-
-**Asciinema link brain-gcd:**
-
+Asciinema link brain-gcd:
 (https://asciinema.org/a/595907)
 
 ### Brain-progression
@@ -55,11 +49,9 @@ brain-gcd
 brain-progression
 ```
 **rules game:**
+*What number is missing in the progression?*
 
->What number is missing in the progression?
-
-**Asciinema link brain-progression:**
-
+Asciinema link brain-progression:
 (https://asciinema.org/a/596895)
 
 ### Brain-prime
@@ -68,9 +60,7 @@ brain-progression
 brain-prime
 ```
 **rules game:**
+*Answer "yes" if given number is prime. Otherwise answer "no".*
 
->Answer "yes" if given number is prime. Otherwise answer "no"
-
-**Asciinema link brain-prime:**
-
+Asciinema link brain-prime:
 (https://asciinema.org/a/596336)
