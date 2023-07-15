@@ -10,7 +10,7 @@ npm link
 
 ## Play Brain-games
 
-### Brain-even
+### Brain-even:
 
 ```
 brain-even
@@ -21,7 +21,8 @@ brain-even
 Asciinema link brain-even:
 (https://asciinema.org/a/595755)
 
-### Brain-calc
+
+### Brain-calc:
 
 ```
 brain-calc
@@ -32,7 +33,8 @@ brain-calc
 Asciinema link brain-calc:
 (https://asciinema.org/a/595815)
 
-### Brain-gcd
+
+### Brain-gcd:
 
 ```
 brain-gcd
@@ -43,7 +45,8 @@ brain-gcd
 Asciinema link brain-gcd:
 (https://asciinema.org/a/595907)
 
-### Brain-progression
+
+### Brain-progression:
 
 ```
 brain-progression
@@ -54,7 +57,8 @@ brain-progression
 Asciinema link brain-progression:
 (https://asciinema.org/a/596895)
 
-### Brain-prime
+
+### Brain-prime:
 
 ```
 brain-prime
