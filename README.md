@@ -2,9 +2,10 @@
 [![Actions Status](https://github.com/ArthurFloyd/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/ArthurFloyd/frontend-project-44/actions)
 
 # Setup
-```make install
 ```
-```npm link
+make install
+
+npm link
 ```
 
 # Play Brain-games
