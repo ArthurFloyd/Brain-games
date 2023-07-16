@@ -2,17 +2,14 @@ import readlineSync from 'readline-sync';
 
 const generalLogic = (playerName, logicGame) => {
   let movesCount = 0;
-  while (movesCount <= 2) {
+  while (movesCount < 3) {
     const arrayQuestionAndAnswer = logicGame();
+    const correctAnswer = arrayQuestionAndAnswer[0];
+
     console.log(`Question: ${arrayQuestionAndAnswer[1]}`);
     const answer = readlineSync.question('Your answer: ');
-    const correctAnswer = arrayQuestionAndAnswer[0];
-    let playerAnswer;
-    if ((!Number(answer))) {
-      playerAnswer = answer;
-    } else {
-      playerAnswer = Number(answer);
-    }
+
+    const playerAnswer = (!Number(answer)) ? answer : Number(answer);
     if (correctAnswer === playerAnswer) {
       console.log('Correct!');
       movesCount += 1;
