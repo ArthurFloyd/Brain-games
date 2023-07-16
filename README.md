@@ -1,7 +1,6 @@
 # nodejs-package
 [![Actions Status](https://github.com/ArthurFloyd/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/ArthurFloyd/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/53be4fa325cae1354cef/maintainability)](https://codeclimate.com/github/ArthurFloyd/frontend-project-45/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/53be4fa325cae1354cef/test_coverage)](https://codeclimate.com/github/ArthurFloyd/frontend-project-45/test_coverage)
 
 
 
