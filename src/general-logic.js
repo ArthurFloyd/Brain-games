@@ -1,6 +1,4 @@
 import readlineSync from 'readline-sync';
-// eslint-disable-next-line import/no-extraneous-dependencies, no-unused-vars
-import _ from 'lodash';
 
 const generalLogic = (playerName, logicGame) => {
   let movesCount = 0;
