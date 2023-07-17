@@ -13,14 +13,20 @@ npm link
 
 ## Brain-games
 
+### Description
 *Five logic games with the ability to change the difficulty.*
+
+### Minimum system requirements
+*__Operating system:__ macOC Ventura 13.2* 
+*__Node.js:__ v20.3.1*
+
 
 ### Brain-even:
 
 ```
 brain-even
 ```
-**rules game:**
+**_rules game:_**
 *Answer "yes" if the number is even, otherwise answer "no".*
 
 [![asciicast](https://asciinema.org/a/595755.svg)](https://asciinema.org/a/595755)
@@ -31,7 +37,7 @@ brain-even
 ```
 brain-calc
 ```
-**rules game:**
+**_rules game:_**
 *What is the result of the expression?*
 
 [![asciicast](https://asciinema.org/a/595815.svg)](https://asciinema.org/a/595815)
@@ -42,7 +48,7 @@ brain-calc
 ```
 brain-gcd
 ```
-**rules game:**
+**_rules game:_**
 *Find the greatest common divisor of given numbers.*
 
 [![asciicast](https://asciinema.org/a/595907.svg)](https://asciinema.org/a/595907)
@@ -53,7 +59,7 @@ brain-gcd
 ```
 brain-progression
 ```
-**rules game:**
+**_rules game:_**
 *What number is missing in the progression?*
 
 [![asciicast](https://asciinema.org/a/596895.svg)](https://asciinema.org/a/596895)
@@ -64,7 +70,7 @@ brain-progression
 ```
 brain-prime
 ```
-**rules game:**
+**_rules game:_**
 *Answer "yes" if given number is prime. Otherwise answer "no".*
 
 [![asciicast](https://asciinema.org/a/596336.svg)](https://asciinema.org/a/596336)
