@@ -17,10 +17,9 @@ npm link
 *Five logic games with the ability to change the difficulty.*
 
 ### Minimum system requirements
-*__Operating system:
-__ macOC Ventura 13.2* 
-*__Node.js:
-__ v20.3.1*
+*__Operating system:__ macOC Ventura 13.2* 
+
+*__Node.js:__ v20.3.1*
 
 
 ### Brain-even:
