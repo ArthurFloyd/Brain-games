@@ -23,7 +23,6 @@ brain-even
 **rules game:**
 *Answer "yes" if the number is even, otherwise answer "no".*
 
-Asciinema link brain-even:
 [![asciicast](https://asciinema.org/a/595755.svg)](https://asciinema.org/a/595755)
 
 
@@ -35,7 +34,6 @@ brain-calc
 **rules game:**
 *What is the result of the expression?*
 
-Asciinema link brain-calc:
 [![asciicast](https://asciinema.org/a/595815.svg)](https://asciinema.org/a/595815)
 
 
@@ -47,7 +45,6 @@ brain-gcd
 **rules game:**
 *Find the greatest common divisor of given numbers.*
 
-Asciinema link brain-gcd:
 [![asciicast](https://asciinema.org/a/595907.svg)](https://asciinema.org/a/595907)
 
 
@@ -59,7 +56,6 @@ brain-progression
 **rules game:**
 *What number is missing in the progression?*
 
-Asciinema link brain-progression:
 [![asciicast](https://asciinema.org/a/596895.svg)](https://asciinema.org/a/596895)
 
 
@@ -71,5 +67,4 @@ brain-prime
 **rules game:**
 *Answer "yes" if given number is prime. Otherwise answer "no".*
 
-Asciinema link brain-prime:
 [![asciicast](https://asciinema.org/a/596336.svg)](https://asciinema.org/a/596336)
