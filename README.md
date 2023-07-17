@@ -11,7 +11,9 @@ make install
 npm link
 ```
 
-## Play Brain-games
+## Brain-games
+
+*Five logic games with the ability to change the difficulty.*
 
 ### Brain-even:
 
@@ -22,7 +24,7 @@ brain-even
 *Answer "yes" if the number is even, otherwise answer "no".*
 
 Asciinema link brain-even:
-(https://asciinema.org/a/595755)
+[![asciicast](https://asciinema.org/a/595755.svg)](https://asciinema.org/a/595755)
 
 
 ### Brain-calc:
@@ -34,7 +36,7 @@ brain-calc
 *What is the result of the expression?*
 
 Asciinema link brain-calc:
-(https://asciinema.org/a/595815)
+[![asciicast](https://asciinema.org/a/595815.svg)](https://asciinema.org/a/595815)
 
 
 ### Brain-gcd:
@@ -46,7 +48,7 @@ brain-gcd
 *Find the greatest common divisor of given numbers.*
 
 Asciinema link brain-gcd:
-(https://asciinema.org/a/595907)
+[![asciicast](https://asciinema.org/a/595907.svg)](https://asciinema.org/a/595907)
 
 
 ### Brain-progression:
@@ -58,7 +60,7 @@ brain-progression
 *What number is missing in the progression?*
 
 Asciinema link brain-progression:
-(https://asciinema.org/a/596895)
+[![asciicast](https://asciinema.org/a/596895.svg)](https://asciinema.org/a/596895)
 
 
 ### Brain-prime:
@@ -70,4 +72,4 @@ brain-prime
 *Answer "yes" if given number is prime. Otherwise answer "no".*
 
 Asciinema link brain-prime:
-(https://asciinema.org/a/596336)
+[![asciicast](https://asciinema.org/a/596336.svg)](https://asciinema.org/a/596336)
