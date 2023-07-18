@@ -1,29 +1,26 @@
 import readlineSync from 'readline-sync';
+import playerGuidance from './cli.js';
 
-const generalLogic = (playerName, logicGame) => {
-  let movesCount = 0;
-  while (movesCount < 3) {
-    const arrayQuestionAndAnswer = logicGame();
-    const correctAnswer = arrayQuestionAndAnswer[0];
+const comparesCorrectAnswerAndPlayer = (insertsQuestionAndAnswer) => {
+  const playerName = playerGuidance();
+  for (let i = 0; i < 3; i + 1) {
+    const arrayQuestionAndAnswer = insertsQuestionAndAnswer();
+    const [correctAnswer, question] = arrayQuestionAndAnswer;
 
-    console.log(`Question: ${arrayQuestionAndAnswer[1]}`);
-    const answer = readlineSync.question('Your answer: ');
+    console.log(`Question: ${question}`);
+    const playerAnswer = readlineSync.question('Your answer: ');
 
-    const playerAnswer = (!Number(answer)) ? answer : Number(answer);
     if (correctAnswer === playerAnswer) {
       console.log('Correct!');
-      movesCount += 1;
+      i += 1;
     } else {
-      console.log(
-        `'${playerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
+      return console.log(
+        `'${playerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
+        Let's try again, ${playerName}!`
       );
-      console.log(`Let's try again, ${playerName}!`);
-      break;
     }
   }
-  if (movesCount === 3) {
-    console.log(`Congratulations, ${playerName}!`);
-  }
+  console.log(`Congratulations, ${playerName}!`);
 };
 
-export default generalLogic;
+export default comparesCorrectAnswerAndPlayer;
