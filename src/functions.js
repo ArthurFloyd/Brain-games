@@ -4,4 +4,4 @@ const getRandomNumber = (min, max) => {
   return Math.floor(Math.random() * (maxNum - minNum) + minNum);
 };
 
-export { getRandomNumber };
+export default getRandomNumber;

@@ -1,26 +1,26 @@
-import { getRandomNumber } from './functions.js';
+import getRandomNumber from '../functions.js';
 
 const generatesAnswerAndQuestionForPrimeGame = () => {
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+  const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const [minNumber, maxNumber] = [1, 100];
   const randomNumber = getRandomNumber(minNumber, maxNumber);
   let correctAnswer = 'yes';
   if (randomNumber === 1) {
     correctAnswer = 'no';
   }
-  if (num === 2) {
+  if (randomNumber === 2) {
     correctAnswer = 'yes';
   }
-  for (let i = 2; i < num; i += 1) {
-    if (num % i === 0) {
+  for (let i = 2; i < randomNumber; i += 1) {
+    if (randomNumber % i === 0) {
       correctAnswer = 'no';
     }
   }
-  return [correctAnswer, `${randomNumber}`];
+  return [correctAnswer, `${randomNumber}`, rules];
 };
 
 const generatesAnswerAndQuestionForProgressionGame = () => {
-  console.log('What number is missing in the progression?');
+  const rules = 'What number is missing in the progression?';
   const [minStepNumber, maxStepNumber] = [2, 5];
   const [minlengthNumber, maxlengthNumber] = [5, 11];
   const [minStartNumber, maxStartNumber] = [1, 50];
@@ -42,11 +42,11 @@ const generatesAnswerAndQuestionForProgressionGame = () => {
   creatingProgression();
   const correctAnswer = String(arrayProgressions[hiddenNumberIndex]);
   arrayProgressions[hiddenNumberIndex] = '..';
-  return [correctAnswer, `${arrayProgressions.join(' ')}`];
+  return [correctAnswer, `${arrayProgressions.join(' ')}`, rules];
 };
 
 const generatesAnswerAndQuestionForCalcGame = () => {
-  console.log('What is the result of the expression?');
+  const rules = 'What is the result of the expression?';
   const [minNumber, maxNumber] = [1, 10];
   const [minIndexSymbol, maxIndexSymbol] = [0, 3];
   let correctAnswer = 0;
@@ -65,24 +65,24 @@ const generatesAnswerAndQuestionForCalcGame = () => {
     return correctAnswer;
   };
   creatingExpression();
-  return [String(correctAnswer), `${firstRandomNumber} ${randomSign} ${secondRandomNumber}`];
+  return [String(correctAnswer), `${firstRandomNumber} ${randomSign} ${secondRandomNumber}`, rules];
 };
 
 const generatesAnswerAndQuestionForEvenGame = () => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
   const [minNumber, maxNumber] = [1, 100];
-  let correctAnswer;
   const randomNumber = getRandomNumber(minNumber, maxNumber);
+  let correctAnswer;
   if (randomNumber % 2 === 0) {
     correctAnswer = 'yes';
   } else {
     correctAnswer = 'no';
   }
-  return [correctAnswer, `${randomNumber}`];
+  return [correctAnswer, `${randomNumber}`, rules];
 };
 
 const generatesAnswerAndQuestionForGcdGame = () => { 
-  console.log('Find the greatest common divisor of given numbers.');
+  const rules = 'Find the greatest common divisor of given numbers.';
   const [minNumber, maxNumber] = [1, 100];
   let firstRandomNumber = getRandomNumber(minNumber, maxNumber);
   let secondRandomNumber = getRandomNumber(minNumber, maxNumber);
@@ -94,7 +94,7 @@ const generatesAnswerAndQuestionForGcdGame = () => {
       secondRandomNumber -= firstRandomNumber;
     }
   }
-  return [String(firstRandomNumber), question];
+  return [String(firstRandomNumber), question, rules];
 };
 
 export {

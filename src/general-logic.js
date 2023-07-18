@@ -3,6 +3,8 @@ import playerGuidance from './cli.js';
 
 const comparesCorrectAnswerAndPlayer = (insertsQuestionAndAnswer) => {
   const playerName = playerGuidance();
+  const arrayRulse = insertsQuestionAndAnswer();
+  console.log(arrayRulse[2]);
   for (let i = 0; i < 3; i + 1) {
     const arrayQuestionAndAnswer = insertsQuestionAndAnswer();
     const [correctAnswer, question] = arrayQuestionAndAnswer;
@@ -15,12 +17,11 @@ const comparesCorrectAnswerAndPlayer = (insertsQuestionAndAnswer) => {
       i += 1;
     } else {
       return console.log(
-        `'${playerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
-        Let's try again, ${playerName}!`
+        `'${playerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${playerName}!`,
       );
     }
   }
-  console.log(`Congratulations, ${playerName}!`);
+  return console.log(`Congratulations, ${playerName}!`);
 };
 
 export default comparesCorrectAnswerAndPlayer;
