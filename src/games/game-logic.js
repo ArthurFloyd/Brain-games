@@ -39,7 +39,7 @@ const generatesAnswerAndQuestionForProgressionGame = () => {
       arrayProgressions.push(i);
     }
     return arrayProgressions;
-  };
+  }
   creatingProgression();
   const correctAnswer = String(arrayProgressions[hiddenNumberIndex]);
   arrayProgressions[hiddenNumberIndex] = '..';
@@ -64,7 +64,7 @@ const generatesAnswerAndQuestionForCalcGame = () => {
       correctAnswer = firstRandomNumber * secondRandomNumber;
     }
     return correctAnswer;
-  };
+  }
   creatingExpression();
   return [String(correctAnswer), `${firstRandomNumber} ${randomSign} ${secondRandomNumber}`, rules];
 };
@@ -82,12 +82,12 @@ const generatesAnswerAndQuestionForEvenGame = () => {
   return [correctAnswer, `${randomNumber}`, rules];
 };
 
-const generatesAnswerAndQuestionForGcdGame = () => { 
+const generatesAnswerAndQuestionForGcdGame = () => {
   const rules = 'Find the greatest common divisor of given numbers.';
   const [minNumber, maxNumber] = [1, 100];
   let firstRandomNumber = getRandomNumber(minNumber, maxNumber);
   let secondRandomNumber = getRandomNumber(minNumber, maxNumber);
-  const question = `${firstRandomNumber} ${secondRandomNumber}`
+  const question = `${firstRandomNumber} ${secondRandomNumber}`;
   while (firstRandomNumber !== secondRandomNumber) {
     if (firstRandomNumber > secondRandomNumber) {
       firstRandomNumber -= secondRandomNumber;
