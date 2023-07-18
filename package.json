@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "[![Actions Status](https://github.com/ArthurFloyd/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/ArthurFloyd/frontend-project-44/actions)",
+  "description": "Five logic games with the ability to change the difficulty.",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
@@ -17,7 +17,6 @@
   "author": "ArthurFloyd",
   "license": "ISC",
   "dependencies": {
-    "is-even": "^1.0.0",
     "lodash": "^4.17.21",
     "readline-sync": "^1.4.10"
   },
