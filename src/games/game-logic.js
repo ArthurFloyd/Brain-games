@@ -36,8 +36,9 @@ const generatesAnswerAndQuestionForProgressionGame = () => {
       arrayProgressions.length !== progressionLength;
       i += progressionStep
     ) {
-      return arrayProgressions.push(i);
+      arrayProgressions.push(i);
     }
+    return arrayProgressions;
   };
   creatingProgression();
   const correctAnswer = String(arrayProgressions[hiddenNumberIndex]);
