@@ -1,13 +1,12 @@
 import readlineSync from 'readline-sync';
-import playerGuidance from './cli.js';
+import { recognizesPlayerName } from './games/functions.js';
 
-const comparesCorrectAnswerAndPlayer = (insertsQuestionAndAnswer) => {
-  const playerName = playerGuidance();
-  const arrayRulse = insertsQuestionAndAnswer();
-  console.log(arrayRulse[2]);
-  for (let i = 0; i < 3; i + 1) {
-    const arrayQuestionAndAnswer = insertsQuestionAndAnswer();
-    const [correctAnswer, question] = arrayQuestionAndAnswer;
+const startGame = (rulse, insertsQuestionAndAnswer) => {
+  const playerName = recognizesPlayerName();
+  console.log(rulse);
+  const roundsCount = 3;
+  for (let i = 0; i < roundsCount; i + 1) {
+    const [correctAnswer, question] = insertsQuestionAndAnswer();
 
     console.log(`Question: ${question}`);
     const playerAnswer = readlineSync.question('Your answer: ');
@@ -24,4 +23,4 @@ const comparesCorrectAnswerAndPlayer = (insertsQuestionAndAnswer) => {
   return console.log(`Congratulations, ${playerName}!`);
 };
 
-export default comparesCorrectAnswerAndPlayer;
+export default startGame;
