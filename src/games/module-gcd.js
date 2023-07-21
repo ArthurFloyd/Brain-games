@@ -1,23 +1,31 @@
 import startGame from '../general-logic.js';
-import { getRandomNumber } from './functions.js';
+import { getRandomNumber } from '../functions.js';
 
-const rules = 'Find the greatest common divisor of given numbers.';
+const rule = 'Find the greatest common divisor of given numbers.';
 
-const generatesAnswerAndQuestionForGcdGame = () => {
-  const [minNumber, maxNumber] = [1, 100];
-  let firstRandomNumber = getRandomNumber(minNumber, maxNumber);
-  let secondRandomNumber = getRandomNumber(minNumber, maxNumber);
-  const question = `${firstRandomNumber} ${secondRandomNumber}`;
-  while (firstRandomNumber !== secondRandomNumber) {
-    if (firstRandomNumber > secondRandomNumber) {
-      firstRandomNumber -= secondRandomNumber;
+const getGcdNumber = (firstRandomNumber, secondRandomNumber) => {
+  let a = firstRandomNumber;
+  let b = secondRandomNumber;
+  while (a !== b) {
+    if (a > b) {
+      a -= b;
     } else {
-      secondRandomNumber -= firstRandomNumber;
+      b -= a;
     }
   }
-  return [String(firstRandomNumber), question];
+  return a;
+};
+
+const generatesAnswerAndQuestionForGcdGame = () => {
+  const minNumber = 1;
+  const maxNumber = 100;
+  const firstRandomNumber = getRandomNumber(minNumber, maxNumber);
+  const secondRandomNumber = getRandomNumber(minNumber, maxNumber);
+  const question = `${firstRandomNumber} ${secondRandomNumber}`;
+  const correctAnswer = getGcdNumber(firstRandomNumber, secondRandomNumber);
+  return [String(correctAnswer), question];
 };
 
 export default () => {
-  startGame(rules, generatesAnswerAndQuestionForGcdGame);
+  startGame(rule, generatesAnswerAndQuestionForGcdGame);
 };
