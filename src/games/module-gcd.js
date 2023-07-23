@@ -1,7 +1,9 @@
-import startGame from '../general-logic.js';
+import startGame from '../index.js';
 import { getRandomNumber } from '../functions.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
+const minNumber = 1;
+const maxNumber = 100;
 
 const getGcdNumber = (firstRandomNumber, secondRandomNumber) => {
   let a = firstRandomNumber;
@@ -17,8 +19,6 @@ const getGcdNumber = (firstRandomNumber, secondRandomNumber) => {
 };
 
 const generatesAnswerAndQuestionForGcdGame = () => {
-  const minNumber = 1;
-  const maxNumber = 100;
   const firstRandomNumber = getRandomNumber(minNumber, maxNumber);
   const secondRandomNumber = getRandomNumber(minNumber, maxNumber);
   const question = `${firstRandomNumber} ${secondRandomNumber}`;

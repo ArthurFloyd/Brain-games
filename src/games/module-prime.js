@@ -1,29 +1,28 @@
-import startGame from '../general-logic.js';
+import startGame from '../index.js';
 import { getRandomNumber } from '../functions.js';
 
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const minNumber = 1;
+const maxNumber = 100;
 
-const getPrimeNumber = (randomNumber) => {
-  let correctAnswer = 'yes';
+const isNumberPrime = (randomNumber) => {
   if (randomNumber === 1) {
-    correctAnswer = 'no';
+    return 'no';
   }
   if (randomNumber === 2) {
-    correctAnswer = 'yes';
+    return 'yes';
   }
   for (let i = 2; i < randomNumber; i += 1) {
     if (randomNumber % i === 0) {
-      correctAnswer = 'no';
+      return 'no';
     }
   }
-  return correctAnswer;
+  return 'yes';
 };
 
 const generatesAnswerAndQuestionForPrimeGame = () => {
-  const minNumber = 1;
-  const maxNumber = 100;
   const randomNumber = getRandomNumber(minNumber, maxNumber);
-  const correctAnswer = getPrimeNumber(randomNumber);
+  const correctAnswer = isNumberPrime(randomNumber);
   return [correctAnswer, `${randomNumber}`];
 };
 

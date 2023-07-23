@@ -1,7 +1,14 @@
-import startGame from '../general-logic.js';
+import startGame from '../index.js';
 import { getRandomNumber } from '../functions.js';
 
 const rule = 'What number is missing in the progression?';
+const minStepNumber = 2;
+const maxStepNumber = 5;
+const minlengthNumber = 5;
+const maxlengthNumber = 11;
+const minStartNumber = 1;
+const maxStartNumber = 50;
+const minHiddenNumber = 0;
 
 const creatingProgression = (progressionStart, progressionLength, progressionStep) => {
   const arrayProgressions = [];
@@ -16,13 +23,6 @@ const creatingProgression = (progressionStart, progressionLength, progressionSte
 };
 
 const generatesAnswerAndQuestionForProgressionGame = () => {
-  const minStepNumber = 2;
-  const maxStepNumber = 5;
-  const minlengthNumber = 5;
-  const maxlengthNumber = 11;
-  const minStartNumber = 1;
-  const maxStartNumber = 50;
-  const minHiddenNumber = 0;
   const progressionStep = getRandomNumber(minStepNumber, maxStepNumber);
   const progressionLength = getRandomNumber(minlengthNumber, maxlengthNumber);
   const progressionStart = getRandomNumber(minStartNumber, maxStartNumber);
