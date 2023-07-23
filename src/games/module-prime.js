@@ -6,23 +6,17 @@ const minNumber = 1;
 const maxNumber = 100;
 
 const isNumberPrime = (randomNumber) => {
-  if (randomNumber === 1) {
-    return 'no';
-  }
-  if (randomNumber === 2) {
-    return 'yes';
-  }
   for (let i = 2; i < randomNumber; i += 1) {
     if (randomNumber % i === 0) {
-      return 'no';
+      return false;
     }
   }
-  return 'yes';
+  return randomNumber !== 1;
 };
 
 const generatesAnswerAndQuestionForPrimeGame = () => {
   const randomNumber = getRandomNumber(minNumber, maxNumber);
-  const correctAnswer = isNumberPrime(randomNumber);
+  const correctAnswer = isNumberPrime(randomNumber) ? 'yes' : 'no';
   return [correctAnswer, `${randomNumber}`];
 };
 
