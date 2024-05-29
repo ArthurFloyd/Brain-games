@@ -1,4 +1,4 @@
-# nodejs-package
+### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ArthurFloyd/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/ArthurFloyd/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/53be4fa325cae1354cef/maintainability)](https://codeclimate.com/github/ArthurFloyd/frontend-project-45/maintainability)
 
@@ -15,17 +15,17 @@ npm link
 
 ## Brain-games
 
-### Description
+#### Description
 *Five logic games with the ability to change the difficulty.*
 
-### Minimum system requirements
+#### Minimum system requirements
 *__Operating system:__ macOC Ventura 13.2* 
 
 *__Node.js:__ v20.3.1*
 
 
-### Brain-even:
-start
+### Brain-even
+**_start:_**
 ```
 brain-even
 ```
@@ -35,8 +35,8 @@ brain-even
 [![asciicast](https://asciinema.org/a/595755.svg)](https://asciinema.org/a/595755)
 
 
-### Brain-calc:
-start
+### Brain-calc
+**_start:_**
 ```
 brain-calc
 ```
@@ -46,8 +46,8 @@ brain-calc
 [![asciicast](https://asciinema.org/a/595815.svg)](https://asciinema.org/a/595815)
 
 
-### Brain-gcd:
-start
+### Brain-gcd
+**_start:_**
 ```
 brain-gcd
 ```
@@ -57,8 +57,8 @@ brain-gcd
 [![asciicast](https://asciinema.org/a/595907.svg)](https://asciinema.org/a/595907)
 
 
-### Brain-progression:
-start
+### Brain-progression
+**_start:_**
 ```
 brain-progression
 ```
@@ -68,8 +68,8 @@ brain-progression
 [![asciicast](https://asciinema.org/a/596895.svg)](https://asciinema.org/a/596895)
 
 
-### Brain-prime:
-start
+### Brain-prime
+**_start:_**
 ```
 brain-prime
 ```
