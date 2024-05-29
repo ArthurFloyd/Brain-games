@@ -8,6 +8,7 @@
 ```
 make install
 ```
+
 ```
 npm link
 ```
@@ -24,7 +25,7 @@ npm link
 
 
 ### Brain-even:
-
+start
 ```
 brain-even
 ```
@@ -35,7 +36,7 @@ brain-even
 
 
 ### Brain-calc:
-
+start
 ```
 brain-calc
 ```
@@ -46,7 +47,7 @@ brain-calc
 
 
 ### Brain-gcd:
-
+start
 ```
 brain-gcd
 ```
@@ -57,7 +58,7 @@ brain-gcd
 
 
 ### Brain-progression:
-
+start
 ```
 brain-progression
 ```
@@ -68,7 +69,7 @@ brain-progression
 
 
 ### Brain-prime:
-
+start
 ```
 brain-prime
 ```
