@@ -7,7 +7,8 @@
 ## Setup
 ```
 make install
-
+```
+```
 npm link
 ```
 
