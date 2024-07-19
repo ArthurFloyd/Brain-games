@@ -1,4 +1,4 @@
-### Hexlet tests and linter status:
+### Autotests and linter status:
 [![Actions Status](https://github.com/ArthurFloyd/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/ArthurFloyd/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/53be4fa325cae1354cef/maintainability)](https://codeclimate.com/github/ArthurFloyd/frontend-project-45/maintainability)
 
